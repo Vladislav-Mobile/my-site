@@ -1,0 +1,278 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ── NAV ── */
+nav {
+  text-align: center;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 14px;
+  font-size: 15px;
+}
+
+nav a:hover { text-decoration: underline; }
+nav a.active { font-weight: 600; }
+
+/* ── SITE TITLE ── */
+.site-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 28px 20px 0;
+  letter-spacing: 0.01em;
+}
+
+/* ── CONTAINER ── */
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── HERO ── */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 0 48px;
+  background: #f2f2f2;
+  margin-top: 24px;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hero-photo {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-photo-placeholder {
+  flex: 0 0 240px;
+  width: 240px;
+  height: 300px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.hero-text h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.hero-text p {
+  margin-bottom: 12px;
+  max-width: 600px;
+}
+
+/* ── SPECIALISTS ── */
+.specialists {
+  padding: 56px 0 64px;
+}
+
+.specialists h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 36px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 28px 20px 24px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.card a.btn-email {
+  display: inline-block;
+  background: #e8eaf0;
+  color: #333;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.card a.btn-email:hover { background: #d0d4e0; }
+
+/* ── FREE MATERIALS ── */
+.materials { padding: 40px 0 60px; }
+
+.material-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #eee;
+}
+
+.material-item:last-child { border-bottom: none; }
+
+.material-icon {
+  flex: 0 0 56px;
+  width: 56px;
+  height: 56px;
+  background: #4a6fa5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.material-body { flex: 1; }
+
+.material-body h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+
+.material-body p { margin-bottom: 8px; color: #333; }
+
+.material-body ul {
+  margin: 6px 0 6px 20px;
+  color: #333;
+}
+
+.material-body ul li { margin-bottom: 3px; }
+
+.material-body .sub-label {
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.material-actions {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.btn {
+  display: inline-block;
+  background: #e8eaf0;
+  color: #333;
+  text-decoration: none;
+  padding: 9px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  min-width: 130px;
+  text-align: center;
+}
+
+.btn:hover { background: #d0d4e0; }
+
+/* ── CONTACTS ── */
+.contacts-page {
+  padding: 60px 0 80px;
+  text-align: center;
+}
+
+.contacts-page h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.contacts-page a {
+  color: #1a0dab;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.contacts-page p { color: #333; }
+
+/* ── PLACEHOLDER PAGES ── */
+.placeholder-page {
+  padding: 60px 0 80px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.placeholder-page h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.placeholder-page .todo-block {
+  background: #fff8e1;
+  border: 2px dashed #f0b429;
+  border-radius: 6px;
+  padding: 24px;
+  color: #555;
+  font-style: italic;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  padding: 28px 20px;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  color: #666;
+}
+
+footer a { color: #666; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .hero-inner { flex-direction: column; align-items: center; }
+  .hero-photo, .hero-photo-placeholder { flex: none; width: 100%; max-width: 300px; height: 240px; }
+  .cards { flex-direction: column; }
+  .material-item { flex-direction: column; }
+  .material-actions { align-items: flex-start; }
+  .site-title { font-size: 1.4rem; }
+}
